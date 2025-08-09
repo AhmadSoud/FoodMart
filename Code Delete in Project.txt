@@ -1,0 +1,605 @@
+ -------------->searching<---------------------------->searching<-------------------------
+
+<div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+     <div class="search-bar row bg-light p-2 my-2 rounded-4">
+         <div class="col-md-4 d-none d-md-block">
+            @*  <select class="form-select border-0 bg-transparent" fdprocessedid="gbavs">
+                 <option>All Categories</option>
+                 <option>Groceries</option>
+                 <option>Drinks</option>
+                 <option>Chocolates</option>
+             </select> *@
+         </div>
+         <div class="col-11 col-md-7">
+             <form id="search-form" class="text-center" action="index.html" method="post">
+                 <input type="text" class="form-control border-0 bg-transparent" placeholder="Search " fdprocessedid="a5ekjg">
+             </form>
+         </div>
+         <div class="col-1">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"></path></svg>
+         </div>
+     </div>
+ </div>
+
+
+
+
+----> navbare<-----------------------> navbare<--------------------
+
+
+
+<div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+   @*  <div class="support-box text-end d-none d-xl-block">
+        <span class="fs-6 text-muted">For Support?</span>
+        <h5 class="mb-0">+980-34984089</h5>
+    </div> *@
+
+    <ul class="d-flex justify-content-end list-unstyled m-0">
+        <li>
+            <a class="rounded-circle bg-light p-2 mx-1" asp-controller="Account" asp-action="AddUser">
+                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
+            </a>
+
+        </li>
+        
+        <li>
+            <a href="#" class="rounded-circle bg-light p-2 mx-1">
+                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
+            </a>
+        </li>
+        <li class="d-lg-none">
+            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+            </a>
+        </li>
+       @*  <li class="d-lg-none">
+            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
+            </a>
+        </li> *@
+    </ul>
+
+    @* <div class="cart text-end d-none d-lg-block dropdown">
+        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" fdprocessedid="xs2h0j">
+            <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
+            <span class="cart-total fs-5 fw-bold">$1290.00</span>
+        </button>
+    </div> *@
+</div>
+
+
+
+/* Footer */
+footer {
+    border-top: 2px solid #ccc;
+    background-color: #004466;
+    box-shadow: 0 0 30px rgba(0, 75, 107, 0.7);
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.widget-title {
+    color: orange;
+}
+
+    .widget-title.h3 {
+        margin-bottom: 10px;
+    }
+
+.p1 {
+    margin: 5px 0;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container-fluid1 {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    color: white;
+}
+
+/* Header */
+header {
+    border-top: 2px solid #ccc;
+    background-color: #004466;
+    box-shadow: 0 0 30px rgba(0, 75, 107, 0.7);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Navbar Left */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+/* Navbar Right */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Navbar Icons */
+.navbar-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #004466;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 75, 107, 0.4);
+    transition: all 0.3s ease;
+}
+
+    .navbar-icon:hover {
+        background-color: #ff9900;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+@model FoodMart.Models.Review
+
+@{
+    ViewData["Title"] = "Create Review";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rating" class="control-label"></label>
+        <input asp-for="Rating" type="number" class="form-control" step="0.1" min="0" max="5" />
+        <span asp-validation-for="Rating" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Subject" class="control-label"></label>
+        <input asp-for="Subject" class="form-control" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Message" class="control-label"></label>
+        <textarea asp-for="Message" class="form-control"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit Review</button>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+
+--------------------->header<-------------------header
+
+
+
+
+    <header>
+
+        <div class="container-fluid">
+            <div class="row py-3 border-bottom">
+
+                <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+                    <div class="main-logo">
+                        <a href="index.html">
+                            <img src="~/images/Icon foodmart.png" asp-append-version="true" alt="logo" class="img-fluid" width="150" height="120">
+                        </a>
+                    </div>
+                </div>
+
+               @*  <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+                    <div class="search-bar row bg-light p-2 my-2 rounded-4">
+                        <div class="col-md-4 d-none d-md-block">
+                            <select class="form-select border-0 bg-transparent" fdprocessedid="gbavs">
+                                <option>All Categories</option>
+                                <option>Groceries</option>
+                                <option>Drinks</option>
+                                <option>Chocolates</option>
+                            </select>
+                        </div>
+                        <div class="col-11 col-md-7">
+                            <form id="search-form" class="text-center" action="index.html" method="post">
+                                <input type="text" class="form-control border-0 bg-transparent" placeholder="Search " fdprocessedid="a5ekjg">
+                            </form>
+                        </div>
+                        <div class="col-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"></path></svg>
+                        </div>
+                    </div>
+                </div> *@
+
+@*                 <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+ *@                   @*  <div class="support-box text-end d-none d-xl-block">
+                        <span class="fs-6 text-muted">For Support?</span>
+                        <h5 class="mb-0">+980-34984089</h5>
+                    </div> *@
+
+                    <ul class="d-flex justify-content-end list-unstyled m-0">
+                        <li>
+                            <a class="rounded-circle bg-light p-2 mx-1" asp-controller="Account" asp-action="AddUser">
+                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
+                            </a>
+
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="rounded-circle bg-light p-2 mx-1">
+                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#heart"></use></svg>
+                            </a>
+                        </li>
+                        <li class="d-lg-none">
+                            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+                            </a>
+                        </li>
+                       @*  <li class="d-lg-none">
+                            <a href="#" class="rounded-circle bg-light p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch" aria-controls="offcanvasSearch">
+                                <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#search"></use></svg>
+                            </a>
+                        </li> *@
+                    </ul>
+
+                    @* <div class="cart text-end d-none d-lg-block dropdown">
+                        <button class="border-0 bg-transparent d-flex flex-column gap-2 lh-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" fdprocessedid="xs2h0j">
+                            <span class="fs-6 text-muted dropdown-toggle">Your Cart</span>
+                            <span class="cart-total fs-5 fw-bold">$1290.00</span>
+                        </button>
+                    </div> *@
+                </div>
+
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FoodMart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Market" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="UsersList">UsersList</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="RolesList">RolesList</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="AddUser">AddUser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="AddRole">AddRole</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@model FoodMart.Models.Product
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<h2>Create Product</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data" class="form-horizontal">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Upload Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Fk_CategoryId" class="control-label">Category ID</label>
+        <input asp-for="Fk_CategoryId" class="form-control" />
+        <span asp-validation-for="Fk_CategoryId" class="text-danger"></span>
+
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EditProduct----------------------EditProduct----------------------EditProduct-------------------EditProduct------------EditProduct-------------EditProduct
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<h2>Edit Product</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data" class="form-horizontal">
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Upload Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Edit</button>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-12">
+        @if (Model != null && Model.Count > 0)
+        {
+            <div class="swiper product-swiper">
+                <div class="swiper-wrapper">
+                    @foreach (var block in Model)
+                    {
+                        @foreach (var product in block.products)
+                        {
+                            <div class="swiper-slide">
+                                <div class="product-card text-center p-3">
+                                    @if (!string.IsNullOrEmpty(product.ImagePath))
+                                    {
+                                        <img src="@product.ImagePath" alt="@product.Name" class="category-img" />
+                                    }
+                                    else
+                                    {
+                                        <div class="product-img-placeholder">
+                                            <span>No Image</span>
+                                        </div>
+                                    }
+
+                                    <div class="product-info mt-2">
+                                        <h5 class="mb-1">@product.Name</h5>
+                                        <p class="text-muted mb-1">Price: @product.Price</p>
+
+                                        <a class="btn btn-sm btn-success mt-2"
+                                           asp-controller="Product"
+                                           asp-action="Details"
+                                           asp-route-id="@product.Id">
+                                            View
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <!-- أسهم التنقل -->
+                <div class="swiper-button-prev product-carousel-prev"></div>
+                <div class="swiper-button-next product-carousel-next"></div>
+            </div>
+        }
+        else
+        {
+            <p class="text-center">No products found.</p>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+     <label style="font-size: 14px;">
+         <input type="checkbox" name="remember"> Remember Me
+     </label>
+
+     <a href="/forgot-password"
+        style="font-size: 13px; color: #007bff; text-decoration: underline;">
+         Forgot Password?
+     </a>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <button type="submit">Login</button>
+
+ <p class="signup">
+     Don't have an account ?
+     
+ <a class="create-btn" asp-controller="Account" asp-action="AddUser">Create Account</a>
+ <p class="signup">
+     Don't have an account ? <a href="/signup" >Create Account</a>
+     <span style="font-size: 12px; color: gray; ">(Sign up)</span>
+ </p>
+
+
+
+
+
+
+
+
+
+
+
+

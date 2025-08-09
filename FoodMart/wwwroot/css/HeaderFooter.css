@@ -1,0 +1,60 @@
+﻿
+header {
+    background-color: rgba(0, 68, 102, 0.8);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 75, 107, 0.5);
+    padding: 10px 0;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: none; /* تأكيد أنه لا يوجد إطار */
+}
+
+
+.FoodStore {
+    text-align: center;
+}
+
+    .FoodStore h3 {
+        margin: 0;
+        line-height: 1.2;
+    }
+
+.icon-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+    .icon-list li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        color: #004466;
+        transition: background 0.3s;
+    }
+
+        .icon-list li a:hover {
+            background: #ccc;
+        }
+
+
+
+
+
+

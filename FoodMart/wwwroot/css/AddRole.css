@@ -1,0 +1,74 @@
+﻿
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    /* رمادي داكن أنيق */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block
+}
+
+.form-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 75, 107, 0.7); /* ⬅ ظل أزرق أقوى */
+    width: 600px;
+    transition: 1.2s ease;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 270px;
+    height: 300px;
+}
+
+    .form-box:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 30px rgba(0, 75, 107, 0.7); /* ⬅ ظل أزرق أقوى */
+    }
+
+    .form-box:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+
+    .form-box h2 {
+        margin-bottom: 25px;
+        color: #222222;
+        text-shadow: 0 0 15px gold;
+    }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #222;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 18px;
+    background-color: #004b6b;
+    color: white;
+    line-height: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+    button:hover {
+        background-color: #006f97;
+        border-color: var(--pinkcolor);
+    }
+

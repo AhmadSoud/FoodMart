@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  @*   @{
+        Layout = null;
+    } *@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Market</title>
+    <link href="~/css/login.css" rel="stylesheet" />
+</head>
+<body>
+
+
+   
+        <div class="login-container">
+            <img src="~/images/logo.png" alt="Market Logo" class="logo" />
+            <h2>Welcome to Our Market</h2>
+            <form method="post" asp-controller="Account" asp-action="Login">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <label style="font-size: 14px;">
+                    <input type="checkbox" name="remember"> Remember Me
+                </label>
+
+                <a href="/forgot-password"
+                   style="font-size: 13px; color: #007bff; text-decoration: underline;">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+          
+            <button type="submit">Sign in</button>
+
+            <p class="signup">
+                Don't have an account ?
+            </p>
+
+                <a class="create-btn" asp-controller="Account" asp-action="AddUser">Create Account</a>
+         
+            </form>
+        </div>
+   
+</body>
+</html>

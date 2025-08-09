@@ -1,0 +1,13 @@
+﻿@model FoodMart.Models.Category
+
+<div class="container py-4">
+    <div class="card mx-auto" style="max-width: 600px;">
+        <img src="@Model.ImagePath" alt="@Model.Name" class="card-img-top" style="height: 300px; object-fit: cover;" />
+        <div class="card-body">
+            <h3 class="card-title">@Model.Name</h3>
+            <p class="card-text">@Model.Description</p>
+            <p class="text-muted">Created: @Model.CreatedDate.ToString("yyyy-MM-dd")</p>
+            <a href="@Url.Action("GetCategories", "Category")" class="btn btn-secondary">← Back to Categories</a>
+        </div>
+    </div>
+</div>

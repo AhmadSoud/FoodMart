@@ -1,0 +1,105 @@
+﻿@model List<ApplicationUser>
+
+@* @{
+    Layout = null;
+} *@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #004466;
+            color: white;
+        }
+
+        .edit-btn,
+        .delete-btn {
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            margin: 2px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.4s ease, transform 0.4s ease;
+            border-radius: 5px;
+        }
+
+        .edit-btn {
+            background-color: #f0ad4e;
+        }
+
+        .edit-btn:hover {
+            background-color: #d99000;
+            transform: scale(1.05);
+        }
+
+        .delete-btn {
+            background-color: #d9534f;
+        }
+
+        .delete-btn:hover {
+            background-color: #c9302c;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <h2>User List</h2>
+
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Actions</th>
+        </tr>
+        @foreach(var user in Model){
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+            <td>@user.PhoneNumber</td>
+            <td>
+                    <a class="edit-btn" asp-controller="Account" asp-action="EditUser" asp-route-id="@user.Id">Edit</a>
+
+                    <a class="delete-btn" asp-controller="Account" asp-action="DeleteUser" asp-route-id="@user.Id">Delete</a>
+            </td>
+        </tr>
+
+        }
+    </table>
+    
+</body>
+
+</html>

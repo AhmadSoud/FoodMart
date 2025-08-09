@@ -1,0 +1,122 @@
+﻿
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    /* رمادي داكن أنيق */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block
+}
+
+.form-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 75, 107, 0.7); /* ⬅ ظل أزرق أقوى */
+    width: 500px;
+    transition: 1.2s ease;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 270px;
+    height: 650px;
+}
+
+    .form-box:hover {
+        transform: scale(1.1);
+        /*        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 204, 0, 0.8);
+
+*/
+        box-shadow: 0 12px 30px rgba(0, 75, 107, 0.3);
+    }
+
+    .form-box:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+
+    .form-box .icon {
+        font-size: 60px;
+        color: #004b6b;
+        margin-bottom: 10px;
+        text-shadow: 0 0 12px rgba(0, 75, 107, 0.4);
+        transition: transform 0.3s ease;
+        /* ظل أصفر ناعم */
+    }
+
+        .form-box .icon:hover {
+            transform: translateY(-3px);
+            /* تتحرك للأعلى بشكل بسيط */
+        }
+
+
+    .form-box h2 {
+        margin-bottom: 25px;
+        color: #222222;
+    }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+/*  button {
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }*/
+
+
+.btn-primary {
+    padding: 12px 20px;
+    border-radius: 18px;
+    background-color: #004b6b;
+    color: white;
+    line-height: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+    .btn-primary:hover {
+        background-color: #006f97;
+        border-color: var(--pinkcolor);
+    }
+
+

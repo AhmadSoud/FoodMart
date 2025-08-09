@@ -1,0 +1,125 @@
+﻿@model FoodMart.Models.Category
+
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+<style>
+    .form-wrapper {
+        display: table;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        font-family: Arial, sans-serif;
+    }
+
+    .form-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 25px;
+        font-weight: bold;
+    }
+
+    .form-row {
+        display: table-row;
+        margin-bottom: 15px;
+    }
+
+    .form-label {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px 10px 10px 0;
+        white-space: nowrap;
+        font-weight: bold;
+        width: 130px;
+    }
+
+    .form-input {
+        display: table-cell;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+        .form-input input,
+        .form-input textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .form-input span {
+            color: red;
+            font-size: 13px;
+        }
+
+    .form-footer {
+        display: table-row;
+    }
+
+        .form-footer td {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+    .btn-submit {
+        width: 100%;
+        background-color: #003049;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 0;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .btn-submit:hover {
+            background-color: #002133;
+        }
+</style>
+
+<div class="form-wrapper">
+    <h2 class="form-title">Create Category</h2>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="form-row">
+            <div class="form-label">
+                <label asp-for="Name">Category Name</label>
+            </div>
+            <div class="form-input">
+                <input asp-for="Name" />
+                <span asp-validation-for="Name"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label">
+                <label asp-for="Description">Description</label>
+            </div>
+            <div class="form-input">
+                <textarea asp-for="Description"></textarea>
+                <span asp-validation-for="Description"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-label">
+                <label>Upload Image</label>
+            </div>
+            <div class="form-input">
+                <input type="file" name="ImageFile" />
+            </div>
+        </div>
+
+        <div class="form-footer">
+            <td colspan="2">
+                <button type="submit" class="btn-submit">Create</button>
+            </td>
+        </div>
+    </form>
+</div>

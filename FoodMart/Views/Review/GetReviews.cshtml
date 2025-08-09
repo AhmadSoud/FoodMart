@@ -1,0 +1,30 @@
+﻿@model List<FoodMart.Models.Review>
+
+@{
+    ViewData["Title"] = "Review List";
+}
+
+<link href="~/css/getreviews.css" rel="stylesheet" />
+
+<div class="review-container">
+    @foreach (var review in Model)
+    {
+        <div class="review-card">
+            @if (!string.IsNullOrEmpty(review.ImagePath))
+            {
+                <img src="@review.ImagePath" alt="Reviewer" class="review-image" />
+            }
+            else
+            {
+                <div class="review-image placeholder">No Image</div>
+            }
+
+            <div class="review-id">ID: @review.Id</div> <!-- تمت إضافته هنا -->
+            <h3 class="review-name">@review.Name</h3>
+            <div class="review-email">@review.Email</div>
+            <div class="review-subject">@review.Subject</div>
+            <p class="review-message">@review.Message</p>
+        </div>
+
+    }
+</div>
